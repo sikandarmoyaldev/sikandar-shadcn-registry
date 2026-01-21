@@ -1,4 +1,4 @@
-# Sikandar Shadcn Registry
+# Sikandar Shadcn Registry (@sik/ui)
 
 A collection of accessible components built for use with Shadcn.
 
