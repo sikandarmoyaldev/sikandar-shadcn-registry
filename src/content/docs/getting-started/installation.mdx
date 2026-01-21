@@ -1,0 +1,31 @@
+---
+title: Installation
+description: How to install Sikandar Shadcn components in your project.
+---
+
+import { Code, TabItem, Tabs } from "@astrojs/starlight/components";
+import { PUBLIC_SITE_SHORT_TITLE, PUBLIC_SITE_URL } from "astro:env/client";
+
+It doesn't matter what framework or package manager you are using. Installing {PUBLIC_SITE_SHORT_TITLE} Shadcn components is as simple as running the `shadcn add` command followed by the URL to the component you want to install. This URL will always be formatted as <code>{PUBLIC_SITE_URL}/r/\<component-name\>.json</code>.
+
+The entire install process is handled by the `shadcn` CLI tool and works identically to how you would install any other Shadcn component.
+
+## Example
+
+<Tabs>
+    <TabItem label="npm" icon="seti:npm">
+        <Code lang="bash" code={`npx shadcn@latest add ${PUBLIC_SITE_URL}/r/password-input.json`} />
+    </TabItem>
+    <TabItem label="pnpm" icon="pnpm">
+        <Code
+            lang="bash"
+            code={`pnpm add shadcn@latest add ${PUBLIC_SITE_URL}/r/password-input.json`}
+        />
+    </TabItem>
+    <TabItem label="Yarn" icon="seti:yarn">
+        <Code
+            lang="bash"
+            code={`yarn add shadcn@latest add ${PUBLIC_SITE_URL}/r/password-input.json`}
+        />
+    </TabItem>
+</Tabs>

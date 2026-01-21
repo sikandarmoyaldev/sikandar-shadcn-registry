@@ -25,6 +25,10 @@ export default defineConfig({
                 context: "client",
                 access: "public",
             }),
+            PUBLIC_GITHUB_REPO_NAME: envField.string({
+                context: "client",
+                access: "public",
+            }),
             PUBLIC_TWITTER_URL: envField.string({
                 context: "client",
                 access: "public",
@@ -55,7 +59,7 @@ export default defineConfig({
                 replacesTitle: true,
             },
             editLink: {
-                baseUrl: process.env.PUBLIC_GITHUB_REPO_URL,
+                baseUrl: `${process.env.PUBLIC_GITHUB_REPO_URL}/tree/main`,
             },
             social: [
                 {
@@ -77,6 +81,28 @@ export default defineConfig({
                             label: "Introduction",
                             slug: "getting-started/introduction",
                         },
+                        {
+                            label: "Installation",
+                            slug: "getting-started/installation",
+                        },
+                    ],
+                },
+                {
+                    label: "Contributing",
+                    items: [
+                        { label: "Introduction", slug: "contributing" },
+                        {
+                            label: "Component Request",
+                            slug: "contributing/component-request",
+                        },
+                        {
+                            label: "Feature Request",
+                            slug: "contributing/feature-request",
+                        },
+                        {
+                            label: "Contributing Code",
+                            slug: "contributing/contributing-code",
+                        },
                     ],
                 },
             ],
@@ -96,8 +122,7 @@ export default defineConfig({
                             link: "/contributing",
                         },
                     ],
-                    footerText:
-                        "Built by [Sikandar](https://www.github.com/sikandarmoyaldev) for use with [Shadcn](https://ui.shadcn.com).",
+                    footerText: `Built by [Sikandar](https://github.com/sikandarmoyaldev) for use with [Shadcn](https://ui.shadcn.com).`,
                 }),
             ],
         }),
