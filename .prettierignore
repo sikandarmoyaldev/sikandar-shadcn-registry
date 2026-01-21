@@ -37,3 +37,6 @@ temp
 *.mp4
 *.webm
 *.mov
+
+# registry files
+public/r/
