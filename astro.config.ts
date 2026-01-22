@@ -88,6 +88,10 @@ export default defineConfig({
                     ],
                 },
                 {
+                    label: "Components",
+                    autogenerate: { directory: "components" },
+                },
+                {
                     label: "Contributing",
                     items: [
                         { label: "Introduction", slug: "contributing" },
