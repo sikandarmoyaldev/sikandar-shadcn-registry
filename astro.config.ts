@@ -54,8 +54,8 @@ export default defineConfig({
             description: process.env.PUBLIC_SITE_DESCRIPTION!,
             customCss: ["./src/styles/globals.css"],
             logo: {
-                dark: "./public/favicon-dark.png",
-                light: "./public/favicon.png",
+                light: "./src/assets/logo/favicon.png",
+                dark: "./src/assets/logo/favicon-dark.png",
                 replacesTitle: true,
             },
             editLink: {
