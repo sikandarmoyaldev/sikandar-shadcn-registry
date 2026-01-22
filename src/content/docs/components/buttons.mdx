@@ -1,0 +1,30 @@
+---
+title: Buttons
+description: Collection of custom advanced buttons - Sponsor Button.
+---
+
+import CodePreview from "@/components/markdown/code-preview/code-preview.astro";
+import Installation from "@/components/markdown/installation-tabs/installation-tabs.astro";
+import ToastProvider from "@/components/markdown/toast-provider.astro";
+
+## Sponsor Button
+
+Beautiful sponsor button with animated heart icon.
+
+<CodePreview demo="sponsor-button/basic" />
+
+### Installation
+
+<Installation registryItem="sponsor-button" />
+
+### Usage
+
+```tsx
+import { SponsorButton } from "@/components/ui/sponsor-button";
+```
+
+```tsx
+<a target="_blank" href="https://github.com/sponsors/sikandarmoyaldev">
+    <SponsorButton />
+</a>
+```

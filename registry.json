@@ -14,6 +14,18 @@
                     "type": "registry:ui"
                 }
             ]
+        },
+        {
+            "name": "sponsor-button",
+            "description": "Beautiful sponsor button with animated heart icon that opens sponsor link.",
+            "type": "registry:component",
+            "registryDependencies": ["button"],
+            "files": [
+                {
+                    "path": "src/registry/new-york/items/sponsor-button/components/sponsor-button.tsx",
+                    "type": "registry:ui"
+                }
+            ]
         }
     ]
 }
